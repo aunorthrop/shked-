@@ -1,0 +1,25 @@
+{
+  "name": "smartschedule",
+  "version": "1.0.0",
+  "description": "AI-Powered Employee Scheduling for Small Businesses",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "scheduling",
+    "employee",
+    "small-business",
+    "ai",
+    "automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "homepage": "https://your-app-name.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/smartschedule.git"
+  }
+}
