@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSchedule - AI Employee Scheduling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SmartSchedule</h1>
+            <p>AI-Powered Employee Scheduling for Small Businesses</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('employees')">Employee Availability</button>
+            <button class="tab-button" onclick="showTab('requirements')">Schedule Requirements</button>
+            <button class="tab-button" onclick="showTab('schedule')">Generated Schedule</button>
+        </div>
+
+        <!-- Employee Availability Tab -->
+        <div id="employees" class="tab-content active">
+            <h2>Employee Availability</h2>
+            <div class="employee-form">
+                <input type="text" id="employeeName" placeholder="Employee Name">
+                <button onclick="addEmployee()">Add Employee</button>
+            </div>
+            <div id="employeeList"></div>
+        </div>
+
+        <!-- Schedule Requirements Tab -->
+        <div id="requirements" class="tab-content">
+            <h2>Schedule Requirements</h2>
+            <div class="requirements-form">
+                <h3>Coverage Needed (Number of Employees per Shift)</h3>
+                <div class="day-requirements" id="dayRequirements"></div>
+                <button onclick="generateSchedule()" class="generate-btn">Generate AI Schedule</button>
+            </div>
+        </div>
+
+        <!-- Generated Schedule Tab -->
+        <div id="schedule" class="tab-content">
+            <h2>Generated Schedule</h2>
+            <div id="generatedSchedule"></div>
+            <button onclick="exportSchedule()" class="export-btn">Export Schedule</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 SmartSchedule - Simplifying employee scheduling for small businesses</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
